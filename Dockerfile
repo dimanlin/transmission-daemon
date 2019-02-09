@@ -11,9 +11,11 @@ RUN apk add --no-cache --no-progress transmission-daemon && \
     mkdir /transmission/download && \
     mkdir /transmission/pids
 
+COPY init.sh /
+
 EXPOSE 51413
 EXPOSE 9091
 
 VOLUME ["/transmission"]
 
-ENTRYPOINT ['/init.sh']
+CMD ['/init.sh']
