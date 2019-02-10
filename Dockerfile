@@ -18,4 +18,5 @@ EXPOSE 9091
 
 VOLUME ["/transmission"]
 
-CMD ['/init.sh']
+ENTRYPOINT ["init.sh"]
+
