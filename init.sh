@@ -1,6 +1,6 @@
 #!/bin/sh
 
-transmission-daemon --allowed 172.17.0.*,127.0.0.*,192.168.1.* \
+transmission-daemon --allowed 172.17.0.*,172.18.0.*,127.0.0.*,192.168.1.* \
                     --watch-dir /transmission/watch \
                     --incomplete-dir /transmission/incomplete \
                     --logfile /transmission/log/transmission.log \
